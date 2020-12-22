@@ -29,3 +29,12 @@ function isFive(input) {
         return false;
     }
 }
+
+function isEven(n) {
+    console.log(typeof n);
+    if (n % 2 == 0){
+        return true;
+    } else {
+        return false;
+    }
+}

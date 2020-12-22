@@ -70,3 +70,36 @@ describe("isFive", function () {
         expect(isFive("5")).toBe(false);
     });
 })
+
+describe("isEven", function () {
+    it('should be defined function', function () {
+        expect(typeof isEven).toBe("function");
+    });
+    it('should be even when called', function () {
+        expect(typeof isEven()).toBe("boolean");
+    });
+    it('should return true when executed 2', function () {
+        expect(isEven(2)).toBe(true);
+    });
+    it('should return true when executed -4', function () {
+        expect(isEven(-4)).toBe(true);
+    });
+    it('should return false when executed 3', function () {
+        expect(isEven(3)).toBe(false);
+    });
+    it('should return false when executed "banana"', function () {
+        expect(isEven("banana")).toBe(false);
+    });
+    it('should return true when executed "8"', function () {
+        expect(isEven("8")).toBe(true);
+    });
+    it('should return false when executed infinity', function () {
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it('should return false when executed true or false', function () {
+        expect(isEven(true, false)).toBe(false);
+    });
+    it('should return false when executed isEven()', function () {
+        expect(isEven()).toBe(false);
+    });
+})
