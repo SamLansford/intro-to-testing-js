@@ -55,4 +55,3 @@ describe("sayHello", function () {
         expect(sayHello([])).toBe("Bad data");
     });
 })
-
