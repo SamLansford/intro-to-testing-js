@@ -38,3 +38,12 @@ function isEven(n) {
         return false;
     }
 }
+
+function isVowel(input) {
+    let vowels = ["A","a","E","e","I","i","O","o","U","u"]
+    if (vowels.includes(input)) {
+        return true;
+    } else {
+        return false;
+    }
+}
