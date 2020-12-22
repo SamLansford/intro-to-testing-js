@@ -133,3 +133,33 @@ describe("isVowel", function () {
         expect(isVowel()).toBe(false);
     });
 })
+
+describe("add", function () {
+    it('should be defined function', function () {
+        expect(typeof add).toBe("function")
+    });
+    it('should  add when called', function () {
+        expect(typeof add()).toBe("number");
+    });
+    it('When adding 2 + 3 return 5', function () {
+        expect(add(2, 3)).toBe(5)
+    });
+    it('When adding -3 + -9 return -12', function () {
+        expect(add(-3,-9)).toBe(-12)
+    });
+    it('When adding "5" + 6 return 11', function () {
+        expect(add("5",6)).toBe(11)
+    });
+    it('When adding "-4" + "10" return 6', function () {
+        expect(add("-4","10")).toBe(6)
+    });
+    it('When adding "banana" + "split" return NaN', function () {
+        expect(add("banana","split")).toBeNaN();
+    });
+    it('When adding 2 + "apples" return NaN', function () {
+        expect(add(2,"apples")).toBeNaN();
+    });
+    it('When receive no parameter return NaN', function () {
+        expect(add()).toBeNaN();
+    });
+})
