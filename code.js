@@ -20,3 +20,12 @@ function sayHello(input) {
         return ("Bad data")
     }
 }
+
+function isFive(input) {
+    console.log(typeof input);
+    if (input === 5) {
+        return true;
+    } else {
+        return false;
+    }
+}
